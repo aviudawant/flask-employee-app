@@ -31,3 +31,14 @@ pipeline {
         }
     }
 }
+post {
+        success {
+            echo 'Flask application started successfully!'
+        }
+
+
+        failure {
+            echo 'Pipeline execution failed!'
+        }
+    }
+}
